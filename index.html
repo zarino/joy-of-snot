@@ -1,0 +1,23 @@
+---
+layout: default
+next: "01.html"
+---
+
+<h1>The Joy of SNOT</h1>
+<h2>Geeking out over<br>non-standard LEGO bricks</h2>
+
+<p class="footnote">With Zarino at the 2015 Retreat</p>
+
+<a href="http://www.beholder.co.uk/feeblepoint/">
+  <img src="vendor/feeblepoint/feeblepoint_logo_200_x_120.gif" class="feeble-self-promotion">
+</a>
+
+<script>
+$(document).on('keydown', function(e){
+  if(e.which == 39 || e.which == 32 || e.which == 13){
+    // right key, space bar, enter key
+    e.preventDefault();
+    window.location.href = $('link[rel="next"]').attr('href');
+  }
+});
+</script>

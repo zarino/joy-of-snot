@@ -1,0 +1,10 @@
+# Site settings
+title: The Joy of SNOT
+description: > # this means to ignore newlines until "baseurl:"
+  A lightning talk for the 2015 mySociety annual retreat,
+  about geeking out over non-standard LEGO bricks.
+baseurl: ""
+host: 0.0.0.0
+
+# Build settings
+markdown: kramdown

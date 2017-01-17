@@ -1,0 +1,158 @@
+@import "normalize";
+
+$color-lego-red: #D01B22;
+
+%full-screen-img {
+  #feeble-slide {
+    height: 100%;
+  }
+
+  img {
+    width: auto;
+    height: 100%;
+  }
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background: $color-lego-red url(../img/red-lego-pattern.png) center center repeat;
+  background-size: 20px;
+
+  color: #fff;
+  text-shadow: 0 5px 15px rgba(128, 0, 0, 1);
+  font-size: 2em;
+  font-family: "Museo Sans", sans-serif;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#feeble-slide {
+  width: 100%;
+  padding: 2em;
+
+  & > :first-child {
+    margin-top: 0;
+  }
+
+  & > :last-child {
+    margin-bottom: 0;
+  }
+}
+
+.feeble-self-promotion {
+  position: absolute;
+  top: 0;
+  right: 2em;
+  width: 150px;
+  box-shadow: 0 5px 15px rgba(128, 0, 0, 1);
+  border-top: 0.2em solid #fff;
+
+  a:hover &,
+  a:focus & {
+    border-top: 0.4em solid #fff;
+  }
+}
+
+p {
+  font-size: 1.3em;
+}
+
+.footnote {
+  font-size: 0.8em;
+}
+
+.pre-heading {
+  margin-bottom: 0;
+  text-transform: uppercase;
+  font-size: 1em;
+  color: mix($color-lego-red, #fff, 30%);
+
+  & + h1 {
+    margin-top: 0.1em;
+  }
+}
+
+.drop-shadow {
+  box-shadow: 0 5px 15px rgba(128, 0, 0, 1);
+}
+
+.lego-patent {
+  background: #fff;
+  @extend %full-screen-img;
+}
+
+.child-with-lego {
+  background: #333 url(../img/child-with-lego.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+.childs-creation {
+  background: #333 url(../img/childs-creation.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+.snot-ship {
+  background: #f5f5f5;
+  @extend %full-screen-img;
+}
+
+.snot-examples {
+  background: #fff;
+  @extend %full-screen-img;
+}
+
+.erling-examples {
+  background: #fff;
+}
+
+.before-and-after {
+  .thing {
+    display: inline-block;
+    width: 40%;
+
+    & + .thing {
+      margin-left: 5%;
+    }
+  }
+
+  img {
+    height: auto;
+    width: 100%;
+  }
+
+  p {
+    margin-top: 0.5em;
+  }
+}
+
+.texas-rangers {
+  background: #fbecd0 url(../img/372-1.jpg) left bottom no-repeat;
+  background-size: cover;
+}
+
+.following-the-rules,
+.breaking-the-rules {
+  background: #333 url(../img/lego-movie-ferrell.jpg) center center no-repeat;
+  background-size: cover;
+  text-shadow: 0 4px 30px rgba(0, 0, 0, 1);
+
+  .pre-heading {
+    color: rgba(255, 255, 255, 0.7);
+  }
+}
+
+.breaking-the-rules {
+  background-image: url(../img/lego-movie-vitruvius.jpg);
+}
